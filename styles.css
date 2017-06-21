@@ -1,0 +1,28 @@
+.parallaxBackground {
+    background: url('http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/10/mountains_hd.jpg');
+    background-position: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallaxOverlay {
+    width: 80%;
+    height: 60%;
+    background: rgba(0,0,0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 84px;
+    letter-spacing: 4px;
+}
+
+.blackBar {
+    width: 100%;
+    height: 20vh;
+    background: black;
+}
