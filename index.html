@@ -1,21 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="reset.css" rel="stylesheet">
-        <link href="styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class='parallaxBackground'>
-            <div class='parallaxOverlay'>
-                <p>Welcome</p>
-            </div>
-        </div>
-        <div class='blackBar'>
 
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="reset.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class='parallaxBackground'>
+        <div class='parallaxOverlay'>
+            <p>Welcome</p>
         </div>
-    
-    </body>
+    </div>
+    <div class='blackBar'>
+    </div>
+    <div class='parallaxImage image2'>
+
+    </div>
+
+
+
+    <!--***************************************************-->
+    <div class='parallaxImage'>
+        <div id="bigYellowCircle"></div>
+        <div id="blueSquare"></div>
+        <div id="greenPentagon"></div>
+    </div>
+    <script>
+        var bigYellowCircle = document.querySelector("#bigYellowCircle");
+        var blueSquare = document.querySelector("#blueSquare");
+        var greenPentagon = document.querySelector("#greenPentagon");
+
+        function setTranslate(xPos, yPos, el) {
+            el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
+        }
+
+        window.addEventListener("DOMContentLoaded", scrollLoop, false);
+
+        var xScrollPosition;
+        var yScrollPosition;
+
+        function scrollLoop() {
+            xScrollPosition = window.scrollX;
+            yScrollPosition = window.scrollY;
+
+            setTranslate(0, yScrollPosition * -0.2, bigYellowCircle);
+            setTranslate(0, yScrollPosition * -1.5, blueSquare);
+            setTranslate(0, yScrollPosition * .5, greenPentagon);
+
+            requestAnimationFrame(scrollLoop);
+        }
+    </script>
+</body>
+
 </html>
