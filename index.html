@@ -12,48 +12,36 @@
 <body>
     <div class='parallaxBackground'>
         <div class='parallaxOverlay'>
-            <p>Welcome</p>
+            <p>Volcanoes</p>
         </div>
     </div>
     <div class='blackBar'>
+        <p>Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
     </div>
     <div class='parallaxImage image2'>
 
     </div>
-
-
-
-    <!--***************************************************-->
-    <div class='parallaxImage'>
-        <div id="bigYellowCircle"></div>
-        <div id="blueSquare"></div>
-        <div id="greenPentagon"></div>
+    <div class='blackBar-large'>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
     </div>
-    <script>
-        var bigYellowCircle = document.querySelector("#bigYellowCircle");
-        var blueSquare = document.querySelector("#blueSquare");
-        var greenPentagon = document.querySelector("#greenPentagon");
+    <div class='parallaxImage image3'>
 
-        function setTranslate(xPos, yPos, el) {
-            el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
-        }
+    </div>
+    <div class='blackBar'>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class='parallaxImage image4'>
 
-        window.addEventListener("DOMContentLoaded", scrollLoop, false);
+    </div>
+    <div class='blackBar'>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+    <div class='parallaxImage image5'>
+        <!--<div class='parallaxOverlay2'>
 
-        var xScrollPosition;
-        var yScrollPosition;
+        </div>-->
 
-        function scrollLoop() {
-            xScrollPosition = window.scrollX;
-            yScrollPosition = window.scrollY;
-
-            setTranslate(0, yScrollPosition * -0.2, bigYellowCircle);
-            setTranslate(0, yScrollPosition * -1.5, blueSquare);
-            setTranslate(0, yScrollPosition * .5, greenPentagon);
-
-            requestAnimationFrame(scrollLoop);
-        }
-    </script>
+    </div>
 </body>
 
 </html>
